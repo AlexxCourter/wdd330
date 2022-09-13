@@ -1,17 +1,30 @@
 *, *::before, *::after {
     box-sizing: border-box;
+    margin: 0;
 }
 
 /* color pallette */
 :root {
-    --dark-main-green: #264653;
+    --dark-main-blue: #264653;
     --main-green: #2A9D8F;
     --accent-yellow: #E9C46A;
     --accent-orange: #F4A261;
     --dark-orange: #E76F51;
+
+    --title-font: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title-font);
+    margin-top: 0.5rem;
+}
+
+main {
+    padding: 0 0.5rem;
 }
 
 .topbar-wrapper {
-    background: linear-gradient(to bottom, --dark-main-green, --main-green);
+    background: linear-gradient(to bottom, var(--dark-main-blue),var(--main-green),var(--main-green),var(--main-green));
     min-height: 40px;
+    margin: 0;
 }
