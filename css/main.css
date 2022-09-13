@@ -13,4 +13,5 @@
 
 .topbar-wrapper {
     background: linear-gradient(to bottom, --dark-main-green, --main-green);
+    min-height: 40px;
 }
