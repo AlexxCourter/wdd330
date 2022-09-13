@@ -1,0 +1,16 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* color pallette */
+:root {
+    --dark-main-green: #264653;
+    --main-green: #2A9D8F;
+    --accent-yellow: #E9C46A;
+    --accent-orange: #F4A261;
+    --dark-orange: #E76F51;
+}
+
+.topbar-wrapper {
+    background: linear-gradient(to bottom, --dark-main-green, --main-green);
+}
