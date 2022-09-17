@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story Editor | WDD330 | Alex Courter</title>
+
+    <script src="js/story.js"></script>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/story.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Story Editor
+    </h1>
+    <label for="story-title">Story Name:</label>
+    <input type="text" name="story-title" class="story-title" id="story-title">
+    <div class="story-controls">
+        <button id="load" onclick="loadStory()">Find and Edit it</button>
+        <button id="save" onclick="saveStory()">Save it</button>
+        <button id="display" onclick="displayStory()">Display it</button>
+    </div>
+    <textarea name="story-editor" id="story-editor" placeholder="Write your original story here." cols="30" rows="10"></textarea>
+    <!-- display the story -->
+    <h2 id="display-title"></h2>
+    <section id="story-display"></section>
+</main>
+  <footer></footer>
+  
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="#w1-notes">W01 Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Week 1 Activities
+    </h1>
+    <p class="activity-desc">Completed the story editor exercise from "Doing Stuff with Web Things"</p>
+    <a href="story-editor.html" class="btn btn--round">Story Editor</a>
+
+    <section class="notes" id="w1-notes">
+        <h2 class="notes-title">Week 1 Notes</h2>
+        <p><em>Questions</em></p>
+        <ul class="questions">
+            <li class="question">What is the best way to decide media query breakpoints to keep the site responsive?</li>
+            <li class="question">How do I dynamically change a form or paginate it while the user is completing it?</li>
+            <li class="question">How secure is local storage? is it suitable for sensitive info of any kind?</li>
+        </ul>
+        <p>It is recommended by <a href="https://www.lambdatest.com/blog/how-to-use-css-breakpoints-for-responsive-design/">lambdatest.com</a> to follow a couple guidelines when selecting breakpoints. First, breakpoints can be adjusted to fit the content that is on the page. Once things stop aligning properly, it is at that spot a new breakpoint may be useful. It is also not recommended to try and fit every device  (i.e. iphone vs. samsung) because of the rate that new devices are released.</p>
+        <p>The localStorage question produced understanding of the differences between localStorage and cookies. A search for "How secure is local storage?" provides all sorts of results that talk about how localStorage or cookies are used to keep a user's login session on a website. localStorage doesn't have the weight restrictions that cookies do, but cookies have security settings that localStorage does not. According to pivotpoint.com, localStorage is vulnerable to some Javascript attacks that could steal the tokens stored. Because cookies have security settings for Javascript that localStorage does not have, cookies are recommended for storing session tokens when possible.</p>
+    </section>
+    
+    <ol class="link-list" id="w1-links"></ol>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>

@@ -23,8 +23,48 @@ main {
     padding: 0 0.5rem;
 }
 
+.notes h2, .notes p, .notes ol {margin: 8px 0;}
+.notes {
+    padding: 0.5rem;
+    box-shadow: 0 0 4px black;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 12px 0;
+}
+.notes li {border-bottom: 1px solid rgba(0,0,0,0.1);}
+.notes ul, .notes li {margin-left: 10px; padding-left: 0;}
+.notes h2 {
+    border-bottom: 2px solid var(--accent-orange);
+}
+
 .topbar-wrapper {
-    background: linear-gradient(to bottom, var(--dark-main-blue),var(--main-green),var(--main-green),var(--main-green));
-    min-height: 40px;
+    background-color: var(--dark-main-blue);
     margin: 0;
+    padding: 0 0.5rem 0.3rem;
+}
+
+.navlink a {
+    color: white;
+    text-decoration: none;
+    font-family: var(--title-font);
+    padding: 8px 6px;
+    border: solid 1px white;
+    display: inline-block;
+    border-radius: 4px;
+}
+
+.btn {
+    color: white;
+    background-color: var(--dark-orange);
+    font-family: sans-serif;
+    text-decoration: 0;
+    border-radius: 4px;
+    padding: 12px 10px;
+    margin: 6px 0;
+    display: inline-block;
+    box-shadow: 1px 2px 3px gray;
+}
+
+.btn--round {
+    border-radius: 20px;
 }

@@ -1,0 +1,20 @@
+textarea {
+    width: 800px;
+    height: 250px;
+    background-color: lightgoldenrodyellow;
+}
+
+input, textarea, button {
+    margin: 5px 0;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--accent-orange);
+    border: 2px solid var(--dark-orange);
+    box-shadow: 2px 3px 4px gray;
+
+}
+
+label {display: block;}
