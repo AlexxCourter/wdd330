@@ -14,7 +14,14 @@ button {
     background-color: var(--accent-orange);
     border: 2px solid var(--dark-orange);
     box-shadow: 2px 3px 4px gray;
+    margin-right: 10px;
 
 }
 
-label {display: block;}
+button:hover {
+    cursor: pointer;
+}
+
+label {display: block; margin-top: 10px;}
+input {padding: 5px; width: 24rem;}
+
