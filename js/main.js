@@ -9,8 +9,12 @@ let linkList = [
     {
         label: "Week 1 notes",
         url: "week1/index.html"
-    } //dont forget comma here after adding week 2
+    }, //dont forget comma here after adding week 2
     //week 2
+    {
+        label: "Week 2 notes",
+        url: "week2/index.html"
+    }
     //week 3
     //week 4
     //week 5

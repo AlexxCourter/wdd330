@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="#w2-notes">W02 Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Week 2 Activities
+    </h1>
+    <p class="activity-desc">Completed self-assigned exercise from last week, "dynamic form."</p>
+    <a href="dynamic-form.html" class="btn btn--round">Dynamic Form</a>
+
+    <section class="notes" id="w2-notes">
+        <h2 class="notes-title">Week 2 Notes</h2>
+        <p><em>Questions</em></p>
+        <ul class="questions">
+            <li class="question">Is there a purpose in using function expressions over function declarations, or is it a matter of style?</li>
+            
+        </ul>
+        <p>according to <a href="https://www.freecodecamp.org/news/when-to-use-a-function-declarations-vs-a-function-expression-70f15152a0a0/#:~:text=In%20short%2C%20use%20function%20declarations,light%2C%20and%20maintain%20clean%20syntax.">freecodecamp.org</a>, a function declaration has global scope, while a function expression does not. This means that a function declaration is useful when you want to call it from somewhere else in the document and function expressions can be used to maintain clean and compartmentalized code. The sitepoint material on this subject said it is best to be consistent. I think there should be purpose to which is used, and that they should not be interchanged haphazardly.</p>
+        <p>With the dynamic form exercise, I made a lot of mistakes with javascript functionality that manipulates the DOM (getting HTML elements and changing their state). I was able to solve them, and now know a couple more things to do to ensure that my Javascript code is working. 1 - check the IDs or properties being targeted by a queryselector to make sure they are entered accurately. I spent a significant amount of time staring at an error because I forgot to set an ID on the element I was attempting to target. 2 - the script must be placed at the bottom of the document to access elements above the script call. If the script is called in the head, it cannot access these elements that are below it in the body (at least not when getting the element by ID).</p>
+        
+    </section>
+    
+    <ol class="link-list" id="w1-links"></ol>
+  </main>
+  <footer></footer>
+  
+</body>
+</html>
