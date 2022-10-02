@@ -14,13 +14,14 @@ section.contact {
     display: flex;
     flex-direction: column;
     margin-top: 0.5rem;
+    max-width: 100%;
 }
 
 input[type=text], input[type=email], input[type=tel], textarea {
     padding: 0.2rem;
     border: 2px solid gray;
     border-radius: 4px;
-    width: 400px;
+    width: 15rem;
     max-width: 100%;
 }
 
@@ -35,6 +36,7 @@ input[type=text], input[type=email], input[type=tel], textarea {
 .contact_email, .contact_phone {
     position: absolute;
     margin-top: 1rem;
+    max-width: 100%;
 }
 
 .card-shadow {
@@ -42,4 +44,10 @@ input[type=text], input[type=email], input[type=tel], textarea {
     height: 100%;
     width: 100%;
     box-shadow: 3px 3px 3px gray;
+}
+
+@media screen and (min-width: 50rem){
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 35rem;
+    }
 }
