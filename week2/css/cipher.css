@@ -1,0 +1,14 @@
+button {
+    display: block;
+    padding: 0.4rem;
+    Background: var(--dark-orange);
+    color: white;
+    border-radius: 15px;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    width: 400px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/cipher.css">
+
+    
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="index.html#w2-notes">W02 Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+   
+    <section class="cipher">
+        <h2 class="cipher-title">Decoder</h2>
+
+        <!-- show an example secret message with a code/decode button -->
+        <p id="ex-message" class="message">This secret message is just an example</p>
+
+        <button onclick="encode()" class="encode">Encode / Decode</button>
+
+        <textarea name="user-message" id="user-message" cols="30" rows="10" class="user-message" placeholder="Enter your secret message"></textarea>
+        <button onclick="encode('user')" class="encode">Encode / Decode User Message</button>
+        <div class="message-display" id="message-display"></div>
+
+    </section>
+    
+    <ol class="link-list" id="w1-links"></ol>
+  </main>
+  <footer></footer>
+  
+
+  <script src="js/cipher.js"></script>
+</body>
+</html>
