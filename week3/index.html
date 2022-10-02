@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Week 2 Activities | WDD330 | Alex Courter</title>
+    <title>Week 3 Activities | WDD330 | Alex Courter</title>
 
     <link rel="stylesheet" href="../css/main.css">
 </head>
@@ -15,32 +15,33 @@
       <div class="nav-link-wrapper">
         <nav class="navlink">
             <a href="../index.html">Portfolio Home</a>
-            <a href="#w2-notes">W02 Notes</a>
+            <a href="#w3-notes">W03 Notes</a>
         </nav>
       </div>
     </div>
   </header>
   <main>
     <h1 class="page-title">
-      Week 2 Activities
+      Week 3 Activities
     </h1>
-    <p class="activity-desc">Completed self-assigned exercise from last week, "dynamic form."</p>
-    <a href="dynamic-form.html" class="btn btn--round">Dynamic Form</a>
+    <p class="activity-desc">Completed an upgrade to the visual layout of self-assigned exercise from week 2, "dynamic form."</p>
+    <p class="activity-desc">Completed self-assigned exercise, "Cipher and Decoder." to practice querySelector</p>
+    <a href="cipher.html" class="btn btn--round">Cipher and Decoder</a>
+    <a href="../week2/dynamic-form.html" class="btn btn--round">Dynamic Form (upgraded)</a>
 
-    <section class="notes" id="w2-notes">
-        <h2 class="notes-title">Week 2 Notes</h2>
+    <section class="notes" id="w3-notes">
+        <h2 class="notes-title">Week 3 Notes</h2>
         <p><em>Questions</em></p>
         <ul class="questions">
-            <li class="question">Is there a purpose in using function expressions over function declarations, or is it a matter of style?</li>
+            <li class="question">is there a use case that makes sense for the double click event listener on a website? I know it works for opening software on my computer, but usually a single click activates a function like clicking a link or button.</li>
             
         </ul>
-        <p>according to <a href="https://www.freecodecamp.org/news/when-to-use-a-function-declarations-vs-a-function-expression-70f15152a0a0/#:~:text=In%20short%2C%20use%20function%20declarations,light%2C%20and%20maintain%20clean%20syntax.">freecodecamp.org</a>, a function declaration has global scope, while a function expression does not. This means that a function declaration is useful when you want to call it from somewhere else in the document and function expressions can be used to maintain clean and compartmentalized code. The sitepoint material on this subject said it is best to be consistent. I think there should be purpose to which is used, and that they should not be interchanged haphazardly.</p>
-        <p>With the dynamic form exercise, I made a lot of mistakes with javascript functionality that manipulates the DOM (getting HTML elements and changing their state). I was able to solve them, and now know a couple more things to do to ensure that my Javascript code is working. 1 - check the IDs or properties being targeted by a queryselector to make sure they are entered accurately. I spent a significant amount of time staring at an error because I forgot to set an ID on the element I was attempting to target. 2 - the script must be placed at the bottom of the document to access elements above the script call. If the script is called in the head, it cannot access these elements that are below it in the body (at least not when getting the element by ID).</p>
+        <p>Honestly I was having some trouble finding a direct answer to my question. I mostly found information for the syntax of the double click event, but not much about what it is actually good for. Because of this, I went back to the book and re-read the example they used for it. applying a "highlight" to an element that is double clicked seems like a good use case, especially for something like an online text book. You could mark a whole paragraph by double clicking it. In thinking about this further, I wondered if there would be a way to double click a paragraph in order to apply focus and select it, making it easy to copy and paste a paragraph. I was able to find <a href="https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse">this article</a> that shows a vanilla javascript method for selecting text in a node. I could use a double click event listener to try out my use case with this syntax. I will make this an exercise for an upcoming week.</p>
+        <p>I ended up pushing the "view more" cards to next week to explore using Maps which I hadn't used before and to practice using querySelectors on the DOM. in the Cipher / decoder exercise.</p>
+        <p>I learned a lot from using queryselectors to target DOM nodes in the decoder self-assigned exercise. I tried out targeting direct child nodes and globally selecting child nodes. Some more notes have been inserted in console.log statements in the exercise page above.</p>
         
     </section>
     
-    <ol class="link-list" id="w1-links"></ol>
-
   </main>
   <footer></footer>
   <script src="team03.js"></script>

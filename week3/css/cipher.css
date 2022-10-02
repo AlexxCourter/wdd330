@@ -1,0 +1,49 @@
+button {
+    display: block;
+    padding: 0.4rem;
+    Background: var(--dark-orange);
+    color: white;
+    border-radius: 15px;
+    margin: 0.5rem 0;
+}
+
+textarea {
+    width: 400px;
+    max-width: 100%;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.night-mode, .perpetual-night-mode {
+    background: #270150;
+    color: whitesmoke;
+}
+.night-mode--button {
+    border-color: #2E4D61;
+    background: #41647b;
+}
+
+.bubbly-mode, .perpetual-bubbly-mode {
+    background: #FDEDEE;
+    color: black;
+}
+
+.bubbly-mode--button {
+    border-color: #EFB0A1;
+    background: #b6968e;
+}
+
+.themes {
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-top: 2rem;
+}
+
+.theme-title {
+    width: 100%;
+    font-family: sans-serif;
+}
