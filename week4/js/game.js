@@ -16,9 +16,11 @@ boardSpaces.forEach((space) => {
         if(space.textContent != "X" && space.textContent != "O" ){
             if (turnPlayer === 1){
                 space.textContent = playerOne;
+                checkWinner();
                 turnPlayer = 2;
             } else if (turnPlayer === 2){
                 space.innerHTML = playerTwo;
+                checkWinner();
                 turnPlayer = 1;
             }
             
@@ -76,7 +78,7 @@ function checkMarkers (nodeList) {
 }
 
 function endGame(winner){
-    document.getElementById('')
+    document.querySelector('.game_info').innerHTML = `The winner is ${winner}!`
 }
 
 //resets the game
@@ -84,7 +86,7 @@ function clearBoard(){
     boardSpaces.forEach((space) => {
         space.textContent = "";
     })
-
+    document.querySelector('.game_info').innerHTML = "";
     turnPlayer = 1;
 }
 
