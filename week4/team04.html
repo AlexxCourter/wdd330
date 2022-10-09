@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="#w4-notes">W04 Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Team activity week 04 
+    </h1>
+    
+    <section class="game">
+        <h2 class="game_title">3-in-a-row</h2>
+        <p class="game_description">be the first player to get 3 marks in a row to win.</p>
+        <div class="game_info"></div>
+
+        <div class="game_wrapper">
+            <!-- top spaces 1-3 -->
+            <div class="game_board row1 column1"></div>
+            <div class="game_board row1 column2"></div>
+            <div class="game_board row1 column3"></div>
+            <!-- middle spaces 4-6 -->
+            <div class="game_board row2 column1"></div>
+            <div class="game_board row2 column2"></div>
+            <div class="game_board row2 column3"></div>
+            <!-- bottom spaces 7-9 -->
+            <div class="game_board row3 column1"></div>
+            <div class="game_board row3 column2"></div>
+            <div class="game_board row3 column3"></div>
+        </div>
+        <button onclick="clearBoard()">reset</button>
+    </section>
+
+    
+  </main>
+  <footer></footer>
+
+  <script src="js/game.js"></script>
+</body>
+</html>

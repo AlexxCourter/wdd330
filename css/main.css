@@ -68,3 +68,28 @@ main {
 .btn--round {
     border-radius: 20px;
 }
+
+.team {
+    background-color: var(--main-green);
+}
+
+input, textarea, select {
+    padding: 0.2rem;
+    border: 2px solid gray;
+    border-radius: 4px;
+    width: 15rem;
+    max-width: 100%;
+}
+
+input[type="radio"] {
+    width: 2rem;
+}
+
+
+/*------- MEDIA QUERIES --------*/
+
+@media screen and (min-width: 50rem){
+    input, textarea, select {
+        width: 35rem;
+    }
+}

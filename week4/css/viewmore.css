@@ -1,0 +1,20 @@
+.card {
+    margin: 1.2rem;
+    box-shadow: 0 0 10px black;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.overlay {
+    display: block;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: gray;
+    opacity: 50%;
+    z-index: -100;
+    
+}

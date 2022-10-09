@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="index.html#w4-notes">W04 Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Week 4 Form exercises from Javascript: Novice to Ninja
+    </h1>
+    <h2>Search bar with javascript "placeholder"</h2>
+   <form name='search' action="/search">
+    <input name="searchInput">
+    <button type="submit">&#128270;</button>
+   </form>
+   <h2>Create a User object from form</h2>
+   <form name="userInfo" action="/user">
+    <label for="fname">First name:
+      <input name="fname" id="fname" type="text">
+    </label>
+
+    <label for="lname">Last name:
+      <input name="lname" id="lname" type="text">
+    </label>
+
+    <label for="catchphrase">Catchphrase:
+      <input name='catchphrase' id="catchphrase" type="text">
+    </label>
+
+    <label for="color">Favorite color:
+      <select name="color" id="color">
+        <option value="none" selected disabled>Choose a color</option>
+        <option value="red">red</option>
+        <option value="yellow">yellow</option>
+        <option value="blue">blue</option>
+        <option value="orange">orange</option>
+        <option value="green">green</option>
+        <option value="purple">purple</option>
+        <option value="black">black</option>
+      </select>
+    </label>
+
+    <button type="submit">Submit</button>
+   </form>
+    
+  </main>
+  <footer></footer>
+
+  <script src="js/forms.js"></script>
+</body>
+</html>

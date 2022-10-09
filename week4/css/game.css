@@ -1,0 +1,30 @@
+
+div.game_board {
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 2rem;
+    font-family: sans-serif;
+}
+div.game_board:hover{
+    cursor: pointer;
+}
+
+div.game_board:nth-child(-n+3) {border-top: none;}
+
+div.game_board:nth-child(3n) {border-right: none;}
+
+div.game_board:nth-child(3n+1) {border-left: none;}
+
+div.game_board:nth-child(n+7) {border-bottom: none;}
+
+
+.game_wrapper {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: 60px 60px 60px;
+    grid-template-rows: 60px 60px 60px;
+
+}
