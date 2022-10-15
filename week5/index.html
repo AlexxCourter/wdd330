@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 5 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="#w4-notes">W05 Notes</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Week 5 Activities
+    </h1>
+    <p class="activity-desc">activities completed this week are:</p>
+    <ul>
+      <li>Practice with form element use in javascript according to code found in 'Javascript: Novice to Ninja' textbook</li>
+      <li>A use case for using the doubleclick listener where an entire paragraph is highlighted. I found out while testing this that google chrome has already implemented this functionality on triple click. (insert laugh track)</li>
+      <li>the "view more card" shows a short paragraph and a view more button. The button calls a function which creates a card containing the full text. The card has a button that allows it to be closed.</li>
+    </ul>
+    
+    <a href="team05.html" class="btn btn--round team">Team activity 04</a>
+    <section class="notes" id="w4-notes">
+        <h2 class="notes-title">Week 4 Notes</h2>
+        <p><em>Principles practiced</em></p>
+        <ul class="questions">
+            <li class="question">Created and used a class</li>
+            <li class="question">used event listeners for clicks and "submit"</li>
+        </ul>
+        <p>I thought it was important to take note of how the scope of "this" changes in nested functions. I can forsee this issue being a debugger nightmare otherwise. the "this" keyword binding becomes lost in the scope of a nested function, for example if a forEach loop is used inside a class method. The best way to fix this it appeared was to create a variable equal to "this" in scope of the outer method so that the nested function can use it, or make the nested function an arrow function which will maintain the scope of "this".</p>
+        <p></p>
+        <p></p>
+        
+    </section>
+    
+  </main>
+  <footer></footer>
+</body>
+</html>
