@@ -8,6 +8,15 @@ body {
     max-width: 100%;
   }
 
+h1 {
+    text-align: center;
+    background-color: beige;
+}
+
+h3 {
+    margin: 0;
+}
+
 li {
     list-style: none;
     display: grid;
@@ -18,4 +27,9 @@ li {
 
 li > h2 {
     grid-column: 1/-1;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }

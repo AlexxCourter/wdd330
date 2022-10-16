@@ -26,21 +26,18 @@
     </h1>
     <p class="activity-desc">activities completed this week are:</p>
     <ul>
-      <li>Practice with form element use in javascript according to code found in 'Javascript: Novice to Ninja' textbook</li>
-      <li>A use case for using the doubleclick listener where an entire paragraph is highlighted. I found out while testing this that google chrome has already implemented this functionality on triple click. (insert laugh track)</li>
-      <li>the "view more card" shows a short paragraph and a view more button. The button calls a function which creates a card containing the full text. The card has a button that allows it to be closed.</li>
+      <li>created the framework for the Todos assignment</li>
     </ul>
-    
+    <a href="task.html" class="btn btn--round">ToDos Prototype</a>
     <a href="team05.html" class="btn btn--round team">Team activity 05</a>
     <section class="notes" id="w5-notes">
         <h2 class="notes-title">Week 5 Notes</h2>
-        <p><em>Principles practiced</em></p>
+        <p><em>Questions</em></p>
         <ul class="questions">
-            <li class="question">Created and used a class</li>
-            <li class="question">used event listeners for clicks and "submit"</li>
+            <li class="question">What other testing modules are there besides Jest?</li>
         </ul>
-        <p>I thought it was important to take note of how the scope of "this" changes in nested functions. I can forsee this issue being a debugger nightmare otherwise. the "this" keyword binding becomes lost in the scope of a nested function, for example if a forEach loop is used inside a class method. The best way to fix this it appeared was to create a variable equal to "this" in scope of the outer method so that the nested function can use it, or make the nested function an arrow function which will maintain the scope of "this".</p>
-        <p></p>
+        <p>This list comes from a 2020 survey according to <a href="https://www.testim.io/blog/best-unit-testing-framework-for-javascript/">testim.io</a>. Other than Jest, popular unit testing frameworks include: Mocha, Storybook, Cypress, and so on. They rate Mocha as complicated but powerful, able to unit test both back end and front end. Cypress is popular because it is browser-based and does not require set up or installation. Storybook focuses on documentation while testing components. In the end, the article labels Jest as the best unit testing framework since it is open source, quick to learn, and easy to use.</p>
+        <p>the ToDos prototype is loosely following Test Driven Development principles. Using a set of test data, the UI is built and tested. I intend to use this test data until the UI is functioning properly with marking and removing tasks from the ToDos.</p>
         <p></p>
         
     </section>

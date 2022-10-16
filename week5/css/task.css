@@ -1,6 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: sans-serif;
     background-color: aliceblue;
     text-align: center;
     display: block;
 }
+
+.taskController {
+    display: flex;
+    justify-content: center;
+    gap: 0.3rem;
+    padding: 0.3rem;
+}
+
+.addTaskBtn {
+    font-size: 1.5rem;
+    background-color: darkblue;
+    color: whitesmoke;
+    border: none;
+    border-radius: 4px;
+}
+
+#tasks {
+    border: 1px solid black;
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+
+#tasks li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+}
+
+.checkbox {
+    border: 1px solid rgb(11, 19, 87);
+    width: 28px;
+    height: 28px;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.removeButton {
+    font-family: sans-serif;
+    background-color: rgb(207, 25, 25);
+    color: whitesmoke;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 4px;
+}
+
+.taskText {width: 100%;}
+
