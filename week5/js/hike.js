@@ -53,22 +53,28 @@ const hikeList = [
     }
     //show a list of hikes in the parentElement
     showHikeList() {
-        renderHikeList(this.parentElement, getAllHikes());
+        renderHikeList(this.parentElement, this.getAllHikes());
     }
     // show one hike with full details in the parentElement
     showOneHike(hikeName) {
         const hike = this.getHikeByName(hikeName);
 
         this.parentElement.innerHTML = renderOneHikeFull(hike);
+        this.backButton.classList.remove('hidden');
     }
     // in order to show the details of a hike ontouchend we will need to attach a listener AFTER the list of hikes has been built. The function below does that.
     addHikeListener() {
       // We need to loop through the children of our list and attach a listener to each, remember though that children is a nodeList...not an array. So in order to use something like a forEach we need to convert it to an array.
-      let elementArray = [...this.parentElement.childNodes()];
+      let elementArray = [...this.parentElement.children];
+      
       //nodelist converted to array
+      console.table(elementArray);
 
       elementArray.forEach(hike => {
-        hike.addEventListener('click', renderOneHikeFull);
+        hike.addEventListener('touchend', function () {
+            
+            this.showOneHike(hike.currentTarget.dataset.name);
+        });
       })
       
     }
@@ -76,6 +82,12 @@ const hikeList = [
       const backButton = document.createElement("button");
       backButton.classList.add('hidden');
       backButton.innerHTML = 'back';
+
+      backButton.addEventListener('touchend', () => {
+        this.showHikeList();
+      })
+
+      this.parentElement.before(backButton);
   
       return backButton;
     }
@@ -105,6 +117,7 @@ const hikeList = [
   }
 
   function renderOneHikeFull(hike) {
+    console.log('successfully called renderOneHikeFull');
     const item = document.createElement("li");
     item.innerHTML = `<h2>${hike.name}</h2>
     <div class="image"><img src="${imgBasePath}${hike.imgSrc}" alt="${hike.imgAlt}"></div>
