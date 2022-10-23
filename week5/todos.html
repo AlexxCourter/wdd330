@@ -25,13 +25,21 @@
       <ul id="tasks" class="taskStyles">
         <!-- build task ui -->
       </ul>
+      <div class="taskFooter">
+        <div class="taskCount"></div>
+        <div class="taskFilter">
+          <span id='all' class="filters filter-all">All.</span>
+          <span id="active" class="filters filter-active">Active.</span>
+          <span id="complete" class="filters filter-completed">Completed</span>
+        </div>
+      </div>
 
       <div class="taskController">
-        <input type="text" class="taskInput">
+        <input type="text" name="taskInput" id="taskInput" class="taskInput">
         <button class="addTaskBtn">+</button>
       </div>
     </main>
 
-    <script src="js/task.js"></script>
+    <script type="module" src="js/todos/main.js"></script>
   </body>
 </html>

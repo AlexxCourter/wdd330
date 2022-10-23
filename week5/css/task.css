@@ -7,6 +7,7 @@ h1 {
     background-color: aliceblue;
     text-align: center;
     display: block;
+    margin: 0.5rem 0;
 }
 
 .taskController {
@@ -26,7 +27,7 @@ h1 {
 
 #tasks {
     border: 1px solid black;
-    margin: 0.5rem;
+    margin: 0.5rem 0.5rem 0;
     padding: 0.2rem;
 }
 
@@ -59,3 +60,45 @@ h1 {
 
 .taskText {width: 100%;}
 
+.taskFooter {
+    margin: 0 0.5rem 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-top: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.taskFilter span {
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    font-size: 0.9rem;
+}
+
+div.checkbox.marked {
+    color: white;
+    background-color: green;
+    text-align: center;
+}
+
+div.taskText.marked {
+    text-decoration: line-through;
+    opacity: 30%;
+}
+
+span.selected {
+    border: 1px solid darkblue;
+    border-radius: 3px;
+}
+
+@media screen and (min-width: 30rem) {
+    #tasks, .taskFooter {
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+    .taskController {
+        max-width: 25rem;
+        margin: 0.5rem auto;
+    }
+}
