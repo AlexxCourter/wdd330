@@ -19,11 +19,12 @@ add a touchend event listener to an element for mobile with a click event fallba
 export function onTouch(elementSelector, callback) { 
     qs(elementSelector).addEventListener('touchend', callback);
     //causing click event issues. 
-    //qs(elementSelector).addEventListener('click', callback);
+    qs(elementSelector).addEventListener('click', callback);
 }
 
 export function onTouchAll(elementSelector, callback) {
     qsAll(elementSelector).forEach(element => {
         element.addEventListener('touchend', callback);
+        element.addEventListener('click', callback);
     });
 }

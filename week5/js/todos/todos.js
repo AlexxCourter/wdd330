@@ -236,8 +236,10 @@ function setButtons() {
     rbtnArray.forEach(btn => {
         //remove previous listeners
         btn.removeEventListener('touchend', removeTodo);
+        btn.removeEventListener('click', removeTodo);
         //update with a new listener
         btn.addEventListener('touchend', removeTodo);
+        btn.addEventListener('click', removeTodo);
     
     });
 
@@ -247,6 +249,8 @@ function setButtons() {
         btn.removeEventListener('touchend', markTodo);
 
         btn.addEventListener('touchend', markTodo);
+        btn.removeEventListener('click', markTodo);
+        btn.addEventListener('click', markTodo);
     })
 }
 
