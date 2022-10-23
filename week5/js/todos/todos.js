@@ -32,7 +32,6 @@ export default class Todos {
             this.removeTodo(e)
         })
         qs('#tasks').addEventListener('mark', (e) => {
-            console.log('mark event reached listener')
             this.completeTodo(e);
         })
 
@@ -89,7 +88,6 @@ export default class Todos {
     addTodo() {
         const userInput = qs('#taskInput').value;
         const key = this.storageKey;
-        console.log(this.storageKey);
         //is timestamp in saveTodo?
         //send to saveTodo with storageKey
         saveTodo(userInput, key);
@@ -148,7 +146,6 @@ export default class Todos {
 
 //keep HTML functions private in the ToDos module and outside the exported class.
 function renderSingleTask(task) {
-    console.log(`creating task "${task.content}" in (renderSingleTask)`)
 
     const item = document.createElement("li");
     //create the objects within the task that can be interacted with
@@ -256,13 +253,11 @@ function setButtons() {
 function removeTodo(event) {
     let id = event.target.id;
     event.target.dispatchEvent(new CustomEvent('remove', {bubbles: true, detail: {id}}));
-    console.log('tried to dispatch delete from removeTodo')
 
 }
 
 function markTodo(event) {
     let id = event.target.id;
     event.target.dispatchEvent(new CustomEvent('mark', {bubbles: true, detail: {id}}));
-    console.log('tried to dispatch mark from markTodo')
 }
 
