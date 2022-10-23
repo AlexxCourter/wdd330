@@ -1,9 +1,14 @@
 import { writeToLS, readFromLS } from './ls.js';
-import {qs, onTouch} from './utilities.js';
+import {qs, onTouch, onTouchAll} from './utilities.js';
 
+/*
+ * todos.js
+ * module that contains the Todos class. The Todos class handles the manipulation of todos on screen and saved to localstorage by using methods and outside helper functions.
+ */
 
 const taskContainer = document.getElementById('tasks');
 
+//this todoList is kept outside the class to keep it private from other modules. Holds active onscreen data. Gets refreshed by localStorage when necessary or augmented to show a filtered view. When filtering, localStorage acts as a backup of original list composition.
 let todoList = null;
 
 export default class Todos {
@@ -17,7 +22,7 @@ export default class Todos {
         
         //bind addTodo to use in the onTouch listeners
         this.boundAdd = this.addTodo.bind(this);
-        //bind removeTodo to use in the onTouch listeners
+        //bind filterHelper to use in the onTouchAll listeners
         this.boundFilter = this.filterHelper.bind(this);
         //use the bound addTodo method so that properties are in scope
         onTouch('.addTaskBtn', this.boundAdd);
@@ -33,10 +38,7 @@ export default class Todos {
 
         qs('.filter-all').classList.add('selected'); //default
 
-        let filterArray = [...document.querySelectorAll('.filters')];
-        filterArray.forEach(element => {
-            element.addEventListener('touchend', this.boundFilter);
-        })
+        onTouchAll('.filters', this.boundFilter);
     }
 
 
@@ -82,7 +84,7 @@ export default class Todos {
     }
 
     /*
-        Add a method to the Todos class called addTodo. It should grab the input in the html where users enter the text of the task, then send that along with the key to a SaveTodo() function. Then update the display with the current list of tasks
+     * Add a method to the Todos class called addTodo. It should grab the input in the html where users enter the text of the task, then send that along with the key to a SaveTodo() function. Then update the display with the current list of tasks
         */
     addTodo() {
         const userInput = qs('#taskInput').value;
@@ -102,7 +104,7 @@ export default class Todos {
         this.filterTodos(id);
     }
     /*
-    Filter the todo list by how many tasks have been completed, active (unmarked), or all.
+     *Filter the todo list by how many tasks have been completed, active (unmarked), or all.
     */
     filterTodos(filterType) {
         let key = this.storageKey;
@@ -111,6 +113,7 @@ export default class Todos {
         qs(".selected").classList.remove('selected')
 
         if (filterType === 'complete') {
+            qs('.filter-completed').classList.add('selected');
             if (readFromLS(key) !== null) {
                 taskList.forEach(task => {
                     if (task.completed === false){
@@ -120,9 +123,8 @@ export default class Todos {
                     }
                 })
             }
-            
-            qs('.filter-completed').classList.add('selected');
         } else if (filterType === 'active') {
+            qs('.filter-active').classList.add('selected');
             if (readFromLS(key) !== null) {
                 taskList.forEach(task => {
                     if (task.completed === true){
@@ -132,17 +134,14 @@ export default class Todos {
                     }
                 })
             }
-            
-            qs('.filter-active').classList.add('selected');
         } else if (filterType === 'all') {
+            qs('.filter-all').classList.add('selected');
             //displays whole list
             if (readFromLS(key) !== null){
                 taskList = [...JSON.parse(readFromLS(key))];
                 setList(taskList);
                 this.listTodos(this);
             }
-            qs('.filter-all').classList.add('selected');
-            
         }
     }
 }
