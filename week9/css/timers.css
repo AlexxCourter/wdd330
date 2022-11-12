@@ -1,0 +1,22 @@
+div img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+div.garden_plot {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+div.garden-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    gap: 5px;
+}
+
+button#reset {
+    background-color: darkblue;
+    color: whitesmoke;
+    padding: 8px;
+    border-radius: 4px;
+}
