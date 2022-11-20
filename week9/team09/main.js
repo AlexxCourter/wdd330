@@ -18,6 +18,8 @@ const keyNodeArray = [...keyNodes];
 //need to add 
 window.addEventListener('keypress', (event) => {
     const key = event.key;
+    const location = document.querySelector(`div[data-key="${event.key}"]`);
+    location.classList.add('playing');
     switch (key){
         case 'a':
             document.key
@@ -56,7 +58,12 @@ window.addEventListener('keypress', (event) => {
             tink.currentTime = 0;
             tink.play();
             break;
+        default:
+            return;
     }
 })
 
-console.dir(boom);
+const keys = Array.from(document.querySelectorAll('.key'));
+keys.forEach(key => key.addEventListener('transitionend', (event) =>{
+    event.target.classList.remove('playing');
+}))

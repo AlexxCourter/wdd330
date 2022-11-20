@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 10 Activities | WDD330 | Alex Courter</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <header>
+    <div class="topbar-wrapper">
+      <img src="" alt="" class="topbar-logo">
+      <div class="nav-link-wrapper">
+        <nav class="navlink">
+            <a href="../index.html">Portfolio Home</a>
+            <a href="#w10-notes">W10 Notes</a>
+            <a href="https://github.com/AlexxCourter/wdd330">source code on GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="page-title">
+      Week 10 Activities
+    </h1>
+    <p class="activity-desc">activities completed this week are:</p>
+    <ul>
+      <li>Completed the homeview of Inspiration Journal app (block 2) - next steps are accessing the API and building the classes that interact with it.</li>
+      <li>Team assignment included.</li>
+    </ul>
+    <a href="../inspirationJournal/index.html" class="btn btn--round">Block 2 challenge part 1 : Home view</a>
+    <a href="./quakes.html" class="btn btn--round team">Team 10: Quakes app</a>
+
+    <section class="notes" id="w10-notes">
+        <h2 class="notes-title">Week 10 Notes</h2>
+        <p><em>Questions</em></p>
+        <ul class="questions">
+            <li class="question">Is it better to use the audio element in HTML, or in Javascript? Does it matter?</li>
+            <li class="question"></li>
+            <li class="question"></li>
+        </ul>
+        <p>Client side validation should not be the only way that data sent to server is validated. This exposes the server to risks that can be injected into the browser. Javascript validation can easily be turned off by the browser client. Server side validation should follow up client side validation. Client side validation is very useful as a first check that can then prompt the user to enter valid information.</p>
+        <p>according to this <a href="https://stackoverflow.com/questions/21463752/javascript-audio-object-vs-html5-audio-tag">stackoverflow</a>, there is little difference between the javascript Audio object and the HTML audio element. One key function difference is that Javascript code will stop if something like an alert is used, stopping the sound if some other part of the code starts to run. The HTML element audio will play even in this case.</p>
+    </section>
+    
+  </main>
+  <footer></footer>
+</body>
+</html>
