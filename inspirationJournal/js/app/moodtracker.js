@@ -351,9 +351,9 @@ function renderTrackerInput(completed=false){
         let result = `
         <div id="inputContainer" class="card">
         <span>How do you feel today?</span>
-        <img class="mood-btn" data-mood="1" id="down" src="/inspirationJournal/img/icons/down.svg">
-        <img class="mood-btn" data-mood="2" id="neutral" src="/inspirationJournal/img/icons/neutral.svg">
-        <img class="mood-btn" data-mood="3" id="good" src="/inspirationJournal/img/icons/good.svg">
+        <img class="mood-btn" data-mood="1" id="down" src="inspirationJournal/img/icons/down.svg">
+        <img class="mood-btn" data-mood="2" id="neutral" src="inspirationJournal/img/icons/neutral.svg">
+        <img class="mood-btn" data-mood="3" id="good" src="inspirationJournal/img/icons/good.svg">
         </div>
         `;
 
