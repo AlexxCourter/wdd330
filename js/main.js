@@ -54,11 +54,15 @@ let linkList = [
     {
         label: "Week 10 notes",
         url: "week10/index.html"
-    }
+    },
     //week 11
     //week 12
     //week 13
     //week 14
+    {
+        label: "Week 14: Challenge block 2 - Inspiration Journal app",
+        url: "inspirationJournal/index.html"
+    }
 ];
 
 //define how the list items are added to the list
