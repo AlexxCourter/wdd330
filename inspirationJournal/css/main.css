@@ -103,6 +103,10 @@ main {height: 100%;}
     border-radius: 4px;
 }
 
+#quoteCard {
+    margin: auto 0.5rem;
+}
+
 #quoteCard p, #quoteCard p::before, #quoteCard p::after, #quoteCard span {
     opacity: 0;
     animation: fadeIn 2s 0.5s forwards;
@@ -170,6 +174,7 @@ JOURNAL VIEW
 
 .entries-container {
     padding: 0.5rem;
+    min-height: 80%;
 }
 
 .journal-entry{
@@ -196,6 +201,7 @@ JOURNAL VIEW
 #newEntryBtn {
     position: sticky;
     margin-left: auto;
+    margin-top: auto;
     margin-right: 1rem;
     bottom: 80px;
     z-index: 100;

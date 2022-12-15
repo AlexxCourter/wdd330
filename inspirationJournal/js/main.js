@@ -49,7 +49,6 @@ window.addEventListener('pageChange', (e) => {
         case 'delete':
             journal.deleteOpenedEntry();
             journal.show();
-            alert('Entry deleted.')
             break;
     }
 })
