@@ -141,10 +141,10 @@ function renderMenuButtons(activeId){
     }
 
     const buttonSet = [
-        {id: 'home', img: '/inspirationJournal/img/icons/home.svg', activeImg: '/inspirationJournal/img/icons/active/home-active.svg'},
-        {id: 'journal', img: '/inspirationJournal/img/icons/journal.svg', activeImg: '/inspirationJournal/img/icons/active/journal-active.svg'},
-        {id: 'track', img: '/inspirationJournal/img/icons/tracker.svg', activeImg: '/inspirationJournal/img/icons/active/tracker-active.svg'},
-        {id: 'goals', img: '/inspirationJournal/img/icons/goal.svg', activeImg: '/inspirationJournal/img/icons/active/goal-active.svg'}
+        {id: 'home', img: '/wdd330/inspirationJournal/img/icons/home.svg', activeImg: '/wdd330/inspirationJournal/img/icons/active/home-active.svg'},
+        {id: 'journal', img: '/wdd330/inspirationJournal/img/icons/journal.svg', activeImg: '/wdd330/inspirationJournal/img/icons/active/journal-active.svg'},
+        {id: 'track', img: '/wdd330/inspirationJournal/img/icons/tracker.svg', activeImg: '/wdd330/inspirationJournal/img/icons/active/tracker-active.svg'},
+        {id: 'goals', img: '/wdd330/inspirationJournal/img/icons/goal.svg', activeImg: '/wdd330/inspirationJournal/img/icons/active/goal-active.svg'}
     ];
 
     buttonSet.forEach(btn => {
